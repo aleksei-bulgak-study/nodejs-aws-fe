@@ -39,6 +39,9 @@ resources:
       Properties:
         BucketName: ${self:custom.s3Bucket}
         AccessControl: PublicRead
+        WebsiteConfiguration:
+          IndexDocument: index.html
+          ErrorDocument: index.html
     ## Specifying the policies to make sure all files inside the Bucket are avaialble to CloudFront
     WebAppS3BucketPolicy:
       Type: AWS::S3::BucketPolicy
