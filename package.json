@@ -7,10 +7,10 @@
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sls:deploy": "serverless client deploy --region eu-west-1 --no-delete-contents --no-config-change --no-policy-change --no-cors-change",
+    "deploy": "serverless client deploy --region eu-west-1 --no-delete-contents --no-config-change --no-policy-change --no-cors-change",
     "sls:stop": "serverless client remove",
     "sls:setup": "serverless deploy",
-    "sls:invalidate": "sls invalidateCloudFrontCache"
+    "sls:invalidate": "serverless invalidateCloudFrontCache"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
